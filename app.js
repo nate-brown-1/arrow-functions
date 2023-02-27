@@ -6,8 +6,8 @@ const theOldWay = function(course) {
   return `I am currently enrolled in ${course}`;
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The old way:', theOldWay('Code 301'));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log('The old way:', theOldWay('Code 301'));
 
 
 // STEP 2
@@ -17,8 +17,8 @@ const theNewWay = (course) => {
   return `I am currently enrolled in ${course}`;
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The new way:', theNewWay('Code 301'));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log('The new way:', theNewWay('Code 301'));
 
 
 // STEP 3
@@ -27,8 +27,8 @@ const withoutParens = course => {
   return `I am currently enrolled in ${course}`;
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Without parens:', withoutParens('Code 301'));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log('Without parens:', withoutParens('Code 301'));
 
 
 // STEP 4
@@ -37,8 +37,8 @@ const withoutParens = course => {
 // Without an arrow function, we need to explicitly type "return"
 const oneLiner = course => `I cam currently enrolled in ${course}`;
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('As a one-liner:', oneLiner('Code 301'));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log('As a one-liner:', oneLiner('Code 301'));
 
 
 // STEP 5
@@ -48,8 +48,8 @@ const add = function(num1, num2) {
   return `${num1} + ${num2} = ${num1 + num2}`;
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Let\'s do some math:', add(4, 5));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log('Let\'s do some math:', add(4, 5));
 
 
 // STEP 6
