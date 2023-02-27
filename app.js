@@ -110,38 +110,36 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 
 const sum = (a, b, c, d) => `${a} + ${b} + ${c} + ${d} = ${a + b + c + d}`;
 
-// TODO: Uncomment the following line of code to see the output in the browser console
+// DONE: Uncomment the following line of code to see the output in the browser console
 console.log(sum(1, 2, 3, 4));
 
 
-let objectLit = function() {
-  return {
-    key1: 'value1',
-    key2: 'value2',
-    key3: 'value3',
-  };
-};
+const objectLit = objectArray => ({
+    key1: objectArray[0],
+    key2: objectArray[1],
+    key3: objectArray[2],
+});
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log(objectLit(['value1', 'value2', 'value3']));
 
 
-let sumAndProduct = function(a, b) {
+const sumAndProduct = (a, b) => {
   let sum = a + b;
   let product = a * b;
   return [sum, product];
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
+const message = name => {
   return `Hello, ${name}!`;
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log(message('Allie'));
 
 
 let Student = function(name, age, hometown) {
@@ -152,33 +150,36 @@ let Student = function(name, age, hometown) {
 
 let joe = new Student('Joe Schmoe', 100, 'Anytown, USA');
 
-// TODO: Uncomment the following line of code to see the output in the browser console
+// DONE: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-// console.log(joe);
 
-// TODO: After viewing the previous console.log(), return the code to a working state.
+// NATE'S COMMENT: RETURNS "STUDENT IS NOT A CONSTRUCTOR"
 
+console.log(joe);
+
+// DONE: After viewing the previous console.log(), return the code to a working state.
 
 
 Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
+// DONE: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
-// console.log(joe.greeting());
 
-// TODO: After viewing the previous console.log(), return the code to a working state.
+// NATE'S COMMENT: RETURNS "Hi, my name is" because it doesn't work with "this"
+
+console.log(joe.greeting());
+
+// DONE: After viewing the previous console.log(), return the code to a working state.
 
 
-
-Student.courseName = function() {
+Student.courseName = () => {
   return 'This student is enrolled in Code 301.';
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(Student.courseName());
-
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log(Student.courseName());
 
 
 // STEP 11
